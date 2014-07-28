@@ -1,0 +1,29 @@
+<?=$this->doctype('XHTML1_STRICT'); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><?=$this->headTitle('Example - YouTube'); ?></head>
+<body>
+
+<h2>Favorite Video of All Time!</h2><br>
+
+<?php 
+foreach ($this->videos as $video) {
+    $title = $video->getVideoTitle();
+    $uri = $video->getVideoWatchPageUrl();
+    $description = $video->getVideoDescription();
+    $thumbnails = $video->getVideoThumbnails();
+    $duration = $video->getVideoDuration();
+    $thumbnail = $thumbnails[1]['url'];
+    $ratingInfo = $video->getRating();
+
+    
+?>
+
+<table>
+<tr>
+    <td><img src='<?=$thumbnail ?>' height=50 width=50></td>
+    <td valign="top"><a href='<?=$uri ?>'><?=$title ?></a><br>Duration <?=$duration ?> sec<br>Avg Rating: <?=round($ratingInfo->average,2) ?><br>Total Rated: <?=$ratingInfo->numRaters ?></td>  
+</tr>
+</table>
+<?php } ?>
+</body>
+</html>

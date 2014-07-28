@@ -1,0 +1,10 @@
+<h1>Calendar List Feed</h1>
+<?=$this->form?>
+<ul>
+    <?php foreach ($this->listFeed as $calendar) { ?>
+    <li><?php echo $calendar->title. "(Event Feed: ".$calendar->id.")";?></li>
+    <?php }?>
+    <?php foreach ($this->listFeed2 as $calendar) { ?>
+    <li><?php echo $calendar->title. "(Event Feed: ".$calendar->id.")";?></li>
+    <?php }?>
+</ul>

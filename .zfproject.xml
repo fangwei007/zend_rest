@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<projectProfile type="default" version="1.12.4">
+  <projectDirectory>
+    <projectProfileFile filesystemName=".zfproject.xml"/>
+    <applicationDirectory classNamePrefix="Application_">
+      <configsDirectory>
+        <applicationConfigFile type="ini"/>
+      </configsDirectory>
+      <controllersDirectory>
+        <controllerFile controllerName="Index">
+          <actionMethod actionName="index"/>
+        </controllerFile>
+        <controllerFile controllerName="Error"/>
+        <controllerFile controllerName="Service">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="testDb"/>
+          <actionMethod actionName="testConn"/>
+          <actionMethod actionName="restData"/>
+          <actionMethod actionName="restClient"/>
+          <actionMethod actionName="news"/>
+          <actionMethod actionName="showNews"/>
+          <actionMethod actionName="testYoutube"/>
+          <actionMethod actionName="uploadYoutube"/>
+        </controllerFile>
+        <controllerFile controllerName="User">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="login"/>
+          <actionMethod actionName="logout"/>
+          <actionMethod actionName="register"/>
+          <actionMethod actionName="dashboard"/>
+        </controllerFile>
+        <controllerFile controllerName="GoogleData">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="youTube"/>
+          <actionMethod actionName="analytics"/>
+          <actionMethod actionName="calendar"/>
+          <actionMethod actionName="documentsListData"/>
+          <actionMethod actionName="spreadsheets"/>
+          <actionMethod actionName="picasaWebAlbums"/>
+          <actionMethod actionName="bookSearch"/>
+          <actionMethod actionName="geo"/>
+          <actionMethod actionName="flickr"/>
+          <actionMethod actionName="amazon"/>
+          <actionMethod actionName="amazonMulti"/>
+          <actionMethod actionName="rss"/>
+          <actionMethod actionName="restServer"/>
+          <actionMethod actionName="restClient"/>
+          <actionMethod actionName="twitter"/>
+        </controllerFile>
+      </controllersDirectory>
+      <formsDirectory>
+        <formFile formName="Login"/>
+        <formFile formName="Register"/>
+        <formFile formName="Api"/>
+        <formFile formName="Analytics"/>
+      </formsDirectory>
+      <layoutsDirectory enabled="false"/>
+      <modelsDirectory>
+        <modelFile modelName="User"/>
+      </modelsDirectory>
+      <modulesDirectory enabled="false"/>
+      <servicesDirectory enabled="false"/>
+      <viewsDirectory>
+        <viewScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Error">
+            <viewScriptFile forActionName="error"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Service">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Service">
+            <viewScriptFile forActionName="testDb"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Service">
+            <viewScriptFile forActionName="testConn"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Service">
+            <viewScriptFile forActionName="restData"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Service">
+            <viewScriptFile forActionName="restClient"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Service">
+            <viewScriptFile forActionName="news"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Service">
+            <viewScriptFile forActionName="showNews"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Service">
+            <viewScriptFile forActionName="testYoutube"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Service">
+            <viewScriptFile forActionName="uploadYoutube"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="login"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="logout"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="register"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="dashboard"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="youTube"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="analytics"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="calendar"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="documentsListData"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="spreadsheets"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="picasaWebAlbums"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="bookSearch"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="geo"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="flickr"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="amazon"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="amazonMulti"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="rss"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="restServer"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="restClient"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="GoogleData">
+            <viewScriptFile forActionName="twitter"/>
+          </viewControllerScriptsDirectory>
+        </viewScriptsDirectory>
+        <viewHelpersDirectory/>
+        <viewFiltersDirectory enabled="false"/>
+      </viewsDirectory>
+      <bootstrapFile filesystemName="Bootstrap.php"/>
+    </applicationDirectory>
+    <dataDirectory enabled="false">
+      <cacheDirectory enabled="false"/>
+      <searchIndexesDirectory enabled="false"/>
+      <localesDirectory enabled="false"/>
+      <logsDirectory enabled="false"/>
+      <sessionsDirectory enabled="false"/>
+      <uploadsDirectory enabled="false"/>
+    </dataDirectory>
+    <docsDirectory>
+      <file filesystemName="README.txt"/>
+    </docsDirectory>
+    <libraryDirectory>
+      <zfStandardLibraryDirectory enabled="false"/>
+    </libraryDirectory>
+    <publicDirectory>
+      <publicStylesheetsDirectory enabled="false"/>
+      <publicScriptsDirectory enabled="false"/>
+      <publicImagesDirectory enabled="false"/>
+      <publicIndexFile filesystemName="index.php"/>
+      <htaccessFile filesystemName=".htaccess"/>
+    </publicDirectory>
+    <projectProvidersDirectory enabled="false"/>
+    <temporaryDirectory enabled="false"/>
+    <testsDirectory>
+      <testPHPUnitConfigFile filesystemName="phpunit.xml"/>
+      <testPHPUnitBootstrapFile filesystemName="bootstrap.php"/>
+      <testApplicationDirectory>
+        <testApplicationControllerDirectory>
+          <testApplicationControllerFile forControllerName="Index"/>
+        </testApplicationControllerDirectory>
+      </testApplicationDirectory>
+      <testLibraryDirectory/>
+    </testsDirectory>
+  </projectDirectory>
+</projectProfile>

@@ -1,0 +1,10 @@
+<?= $this->form ?>
+<?php
+
+foreach ($this->accounts as $account) {
+    echo "{$account->title}<br>";
+}
+//foreach ($this->result as $row) {
+//    echo $row->getMetric('ga:visits') . "\t";
+//    echo $row->getValue('ga:bounces') . "\n";
+//}

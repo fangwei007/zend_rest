@@ -1,0 +1,20 @@
+<?php // echo $this->doctype('XHTML1_STRICT'); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <?php echo $this->headTitle('Example - Flickr '); ?>
+</head>
+<body>
+    <h1>Flickr API</h1>
+
+<?php 
+echo $this->form;
+foreach ($this->photos as $photo)
+{
+	$thumbnail = $photo->Thumbnail->uri;
+?>
+<img src='<?php echo $thumbnail ?>'>
+<?php 
+} 
+?>
+</body>
+</html>

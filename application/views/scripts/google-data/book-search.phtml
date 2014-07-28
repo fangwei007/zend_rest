@@ -1,0 +1,7 @@
+<?php
+echo $this->form;
+foreach ($this->feed as $entry) {
+                echo "id: " . $entry->getVolumeId();
+                echo "  title: " . $entry->getTitle() . "<br>";
+//                echo "  view ability: ".$entry->getViewability();
+            }

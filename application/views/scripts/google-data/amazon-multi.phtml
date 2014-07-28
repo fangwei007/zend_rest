@@ -1,0 +1,27 @@
+<?php
+echo $this->form;
+
+foreach ($this->results as $result) {
+    echo '<br>' . $result->Title . '<br>';
+
+    //Fetch the Customer Reviews and display the content. 
+    $customerReviews = $result->CustomerReviews;
+    if (empty($customerReviews)) {
+        echo "No customer reviews.<br>";
+    } else {
+        foreach ($result->CustomerReviews as $customerReview) {
+            echo "Review Summary: " . $customerReview->Summary . "...<br>";
+        }
+    }
+
+    $similarProduct = $result->SimilarProducts;
+
+    if (empty($similarProduct)) {
+        echo "No recommendation.";
+    } else {
+        foreach ($similarProduct as $similar) {
+            echo "Recommended Books:" . $similar->Title . "<br>";
+        }
+    }
+    echo "<br><br>";
+}
