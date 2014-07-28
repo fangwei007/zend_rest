@@ -215,7 +215,7 @@ class GoogleDataController extends Zend_Controller_Action
     public function flickrAction()
     {
         try {
-            $flickr = new Zend_Service_Flickr('573a545285a6aefd33ab5ac98ee624cc');
+            $flickr = new Zend_Service_Flickr('');
             $form = new Application_Form_Api();
             $this->view->form = $form;
 
@@ -236,7 +236,7 @@ class GoogleDataController extends Zend_Controller_Action
     {
         try {
 
-            $amazon = new Zend_Service_Amazon('AKIAITX37YRUAQSKMIXQ', 'FR', 'CxaCNPy8v/wzKt75E6lTzebYYvS4AizRENXxTZ/h');
+            $amazon = new Zend_Service_Amazon('', '', '');
             $results = $amazon->itemLookup("1430218258", array('Condition' => 'Used',
                 'AssociateTag' => 'ralph',
                 'Publisher' => 'Apress',
@@ -256,7 +256,7 @@ class GoogleDataController extends Zend_Controller_Action
             $this->view->form = $form;
 
 
-            $amazon = new Zend_Service_Amazon('AKIAITX37YRUAQSKMIXQ', 'FR', 'CxaCNPy8v/wzKt75E6lTzebYYvS4AizRENXxTZ/h');
+            $amazon = new Zend_Service_Amazon('', 'FR', '');
             $key = (isset($_GET) && $_GET['input'] != null) ? $_GET['input'] : 'ralph';
             $results = $amazon->itemSearch(array('SearchIndex' => 'Books',
 //                    'Keywords' => 'ralph',
